@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { NavLink } from 'react-router-dom';
 import baseIcon from '../assets/base.svg';
 import optimism from '../assets/optimism.svg';
+import freyaIcon from '../assets/freya.png';
 import { ArrowLeftRight, Activity, Wallet, ChevronDown, ArrowRight, ChevronRight, Download, Upload } from 'lucide-react';
 
 // Keep existing ABI, CONTRACT_ADDRESS, and SUPPORTED_CHAINS constants
@@ -543,11 +544,10 @@ function Bridge() {
             <div className="flex items-center space-x-8">
               <nav >
               <div className="flex items-center space-x-3">
-                <div className="w-10 h-10 rounded-xl bg-orange-500/20 flex items-center justify-center">
-                  <ArrowLeftRight className="text-orange-500" />
-                </div>
                 <span className="text-xl font-bold">
-                  <NavLink to="/">Freya</NavLink> 
+                  <NavLink to="/">
+                    <img src={freyaIcon} alt="Freya" className="w-14 h-14" />
+                  </NavLink> 
                   </span>
               </div>
               </nav>

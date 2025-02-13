@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Wallet, ArrowRightLeft, Shield, Zap, Globe, ChevronRight } from 'lucide-react';
+import freyaIcon from '../assets/freya.png';
 
 const BackgroundAnimation = () => (
   <div className="absolute inset-0 overflow-hidden">
@@ -91,8 +92,9 @@ const LandingPage = () => {
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-orange-500 to-purple-600 rounded-lg" />
-              <span className="text-xl font-bold">Freya</span>
+              <span className="text-xl font-bold">
+                <img src={freyaIcon} alt="Freya" className="w-14 h-14" />
+              </span>
             </div>
             <div className="flex items-center space-x-8">
               <Link to="/app" className="hover:text-orange-500 transition-colors">
