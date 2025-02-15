@@ -97,12 +97,7 @@ const LandingPage = () => {
               </span>
             </div>
             <div className="flex items-center space-x-8">
-              <Link to="/app" className="hover:text-orange-500 transition-colors">
-                App
-              </Link>
-              <Link to="/docs" className="hover:text-orange-500 transition-colors">
-                Docs
-              </Link>
+              <a href="https://github.com/PureBl00d/Freya/blob/main/README.md" className="hover:text-gray-400 transition-colors">Docs</a>
               <Link 
                 to="/app" 
                 className="bg-gradient-to-r from-orange-500 to-purple-600 px-6 py-2 rounded-lg font-semibold hover:opacity-90 transition-opacity"
